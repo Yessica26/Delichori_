@@ -10,16 +10,16 @@ import java.sql.SQLException;
 
 public class ProductoDao {
 
-
+//OJO ESTO ES UNA PRUEBA HAY QU AJUSTAR TODO AL DIAGRAMA UML DELICHORI
 
         public  static void crearProductoDB(Producto registro ){
 
                 try(Connection conexion = Conexion.get_connetion()){
-                         //prepara el query del DB para mandar
+
                         PreparedStatement ps =null;
 
                         try {
-                                String query = "INSERT INTO producto(nombre,descripcion, precio, costo, cantidad) VALUES (?,?,?,?,?)";
+                                String query = "INSERT INTO producto(nombre_producto,descripcion_productp, precioCosto, precioVenta, ganancia_producto, existencia) VALUES (?,?,?,?,?,?)";
 
                                 ps = conexion.prepareStatement(query);
 
