@@ -1,4 +1,4 @@
-package co.com.view;
+package co.com.delichori.view;
 
 import co.com.delichori.service.ProductoService;
 
